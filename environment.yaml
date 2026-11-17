@@ -1,0 +1,43 @@
+name: fast_back
+channels:
+    - conda-forge
+    - defaults
+    
+dependencies:
+    - python=3.12
+    # CPU, MPS
+    - pytorch
+    - torchvision
+
+    # CUDA
+    # - pytorch 
+    # - torchvision 
+    # - pytorch-cuda=12.4
+
+    # XPU
+    # - pytorch-xpu
+    # - torchvision
+    # - intel-extension-for-pytorch
+    
+    - sqlalchemy>=2.0.30
+    - bcrypt
+    - pydantic>=2.7.4
+    - python-dotenv=1.0.1
+
+    - pip
+    - pip:
+        - asyncio
+        - aioboto3
+        - fastapi==0.136.1
+        - uvicorn==0.30.1
+        - httpx
+        - pyjwt
+        - pillow
+        - python-multipart
+        - passlib[bcrypt]
+        - redis
+        - python-jose[cryptography]
+        - psycopg2-binary
+        - asyncpg
+        - greenlet
+        - psycopg[binary]
